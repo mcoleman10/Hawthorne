@@ -1,0 +1,7 @@
+E:\Users\Coleman\Documents\Visual Studio 2017\MyProjects\DomainNameGenerator\DomainNameGenerator\bin\Debug\DomainNameGenerator.exe.config
+E:\Users\Coleman\Documents\Visual Studio 2017\MyProjects\DomainNameGenerator\DomainNameGenerator\bin\Debug\DomainNameGenerator.exe
+E:\Users\Coleman\Documents\Visual Studio 2017\MyProjects\DomainNameGenerator\DomainNameGenerator\bin\Debug\DomainNameGenerator.pdb
+E:\Users\Coleman\Documents\Visual Studio 2017\MyProjects\DomainNameGenerator\DomainNameGenerator\obj\Debug\DomainNameGenerator.csprojAssemblyReference.cache
+E:\Users\Coleman\Documents\Visual Studio 2017\MyProjects\DomainNameGenerator\DomainNameGenerator\obj\Debug\DomainNameGenerator.csproj.CoreCompileInputs.cache
+E:\Users\Coleman\Documents\Visual Studio 2017\MyProjects\DomainNameGenerator\DomainNameGenerator\obj\Debug\DomainNameGenerator.exe
+E:\Users\Coleman\Documents\Visual Studio 2017\MyProjects\DomainNameGenerator\DomainNameGenerator\obj\Debug\DomainNameGenerator.pdb

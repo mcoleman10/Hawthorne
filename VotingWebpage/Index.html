@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function increaseVote(sender){
+                var score = document.getElementById(sender).innerHTML;
+                score = parseInt(score,10) + 1;
+                document.getElementById(sender).innerHTML = score;
+                orderList();
+            }
+
+            function decreaseVote(sender){
+                var score = document.getElementById(sender).innerHTML;
+                score = parseInt(score,10) - 1;
+                document.getElementById(sender).innerHTML = score;
+                orderList();
+            }
+
+            function orderList(){
+                var list, i, switching, b, shouldSwitch;
+                list = document.getElementById("votingResults");
+                switching = true;
+                /* Make a loop that will continue until no switching has been done: */
+                while (switching) {
+                    // Start by saying: no switching is done:
+                    switching = false;
+                    b = list.getElementsByTagName("LI");
+                    // Loop through all list items:
+                    for (i = 0; i < (b.length - 1); i++) {
+                        // Start by saying there should be no switching:
+                        shouldSwitch = false;
+                        /* Check if the next item should switch place with the current item: */
+                        if (Number(b[i].querySelector("label").innerHTML) < Number(b[i + 1].querySelector("label").innerHTML)) {
+                            /* If next item is numerically lower than current item, mark as a switch and break the loop: */
+                            shouldSwitch = true;
+                            break;
+                        }
+                    }
+                    if (shouldSwitch) {
+                        /* If a switch has been marked, make the switch and mark the switch as done: */
+                        b[i].parentNode.insertBefore(b[i + 1], b[i]);
+                        switching = true;
+                    }
+                }
+            }
+            </script>
+        <title>Website Voting</title>
+    </head>
+    <body>
+        <ul id="votingResults">
+            <li>
+                <button onclick='increaseVote("firstScore")'>+</button>
+                <label id="firstScore">0</label>
+                <button onclick='decreaseVote("firstScore")'>-</button>
+                you-sleeping-lime-brain.gov 
+            </li>
+            <li>
+                <button onclick='increaseVote("secondScore")'>+</button>
+                <label id="secondScore">0</label>
+                <button onclick='decreaseVote("secondScore")'>-</button>
+                lemon-ninja-real.net 
+            </li>
+            <li>
+                <button onclick='increaseVote("thirdScore")'>+</button>
+                <label id="thirdScore">0</label>
+                <button onclick='decreaseVote("thirdScore")'>-</button>
+                lead-mind.net 
+            </li>
+            <li>
+                <button onclick='increaseVote("fourthScore")'>+</button>
+                <label id="fourthScore">0</label>
+                <button onclick='decreaseVote("fourthScore")'>-</button>
+                brain-sound.net 
+            </li>
+            <li>
+                <button onclick='increaseVote("fifthScore")'>+</button>
+                <label id="fifthScore">0</label>
+                <button onclick='decreaseVote("fifthScore")'>-</button>
+                sound-keyboard-carry-brain.org 
+            </li>
+            <li>
+                <button onclick='increaseVote("sixthScore")'>+</button>
+                <label id="sixthScore">0</label>
+                <button onclick='decreaseVote("sixthScore")'>-</button>
+                keyboard-carry-apple-lead.org 
+            </li>
+            <li>
+                <button onclick='increaseVote("seventhScore")'>+</button>
+                <label id="seventhScore">0</label>
+                <button onclick='decreaseVote("seventhScore")'>-</button>
+                silence-apple-sound-carry.org 
+            </li>
+            <li>
+                <button onclick='increaseVote("eigthScore")'>+</button>
+                <label id="eigthScore">0</label>
+                <button onclick='decreaseVote("eigthScore")'>-</button>
+                patience-pineapple-keyboard-place.com 
+            </li>
+            <li>
+                <button onclick='increaseVote("ninthScore")'>+</button>
+                <label id="ninthScore">0</label>
+                <button onclick='decreaseVote("ninthScore")'>-</button>
+                hawthorne-fruit.org 
+            </li>
+            <li>
+                <button onclick='increaseVote("tenthScore")'>+</button>
+                <label id="tenthScore">0</label>
+                <button onclick='decreaseVote("tenthScore")'>-</button>
+                follow-brain.gov 
+            </li>
+        </ul>
+    </body>
+</html>
